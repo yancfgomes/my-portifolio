@@ -1,8 +1,32 @@
-# React + Vite
+# Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do meu portfólio pessoal!  
+Este projeto foi desenvolvido utilizando **React**, **JavaScript** e o incrível **Vite** para proporcionar uma experiência rápida e moderna.
 
-Currently, two official plugins are available:
+## 🖥️ Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React**: Utilizado para construir uma interface de usuário dinâmica e moderna.
+- ⚡ **Vite**: Ferramenta ágil para inicialização e configuração do projeto.
+- 🟨 **JavaScript**: Linguagem principal para lógica e funcionalidades do projeto.
+- 🎨 **CSS**: Responsável pela estilização personalizada e responsiva.
+
+
+## 🚀 Funcionalidades
+
+- Apresentação pessoal e profissional.
+- Seção de projetos com descrições e links.
+- Contato direto por meio de links para redes sociais e e-mail.
+
+## 📫 Contato
+
+Você pode me encontrar e entrar em contato pelos seguintes canais:
+
+- 🌐 [**GitHub**](https://github.com/yancfgomes)  
+  Explore meus projetos e contribuições.
+
+- 💼 [**LinkedIn**](https://www.linkedin.com/in/yancfgomes/)  
+  Vamos nos conectar profissionalmente.
+
+- 📧 **E-mail**: [yancfgomes@email.com](mailto:yancfgomes@email.com)  
+  Entre em contato diretamente pelo e-mail.
+
