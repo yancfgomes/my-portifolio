@@ -1,0 +1,20 @@
+.txts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title2 {
+  padding-top: 3rem;
+}
+.red_txt {
+  font-size: 3.125rem;
+}
+.big_txt {
+  font-size: 300px;
+}
+.red_txt,
+.big_txt {
+  color: var(--red);
+  font-weight: bold;
+}
