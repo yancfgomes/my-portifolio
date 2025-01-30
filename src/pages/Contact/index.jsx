@@ -44,8 +44,6 @@ function Contact() {
             >
               <BsLinkedin className={styles.icon} />
             </a>
-            
-            
           </div>
         </section>
       </Container>
