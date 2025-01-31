@@ -1,15 +1,9 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Container from "../../components/Container/Container";
 import styles from "./Contact.module.css";
 import { GoMail } from "react-icons/go";
 import { BsWhatsapp, BsGithub, BsLinkedin } from "react-icons/bs";
 
 function Contact() {
   return (
-    <>
-      <Header />
-      <Container>
         <section className={styles.contact}>
           <h2>Contact</h2>
           <h3>Get in touch</h3>
@@ -46,9 +40,6 @@ function Contact() {
             </a>
           </div>
         </section>
-      </Container>
-      <Footer />
-    </>
   );
 }
 

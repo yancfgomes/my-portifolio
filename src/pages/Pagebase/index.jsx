@@ -3,17 +3,16 @@ import Container from "../../components/Container/Container";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
-function Pagebase() {
+function PageBase() {
   return (
-    <main>
-        <Header />
-        <Container>
-            <Outlet />
-        </Container>
-
-        <Footer />
-    </main>
+    <>
+      <Header />
+      <Container>
+        <Outlet />
+      </Container>
+      <Footer />
+    </>
   );
 }
 
-export default Pagebase;
+export default PageBase;
