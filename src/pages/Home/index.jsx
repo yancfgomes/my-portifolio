@@ -19,7 +19,7 @@ function Home() {
           <figure>
             <img
               className={styles.img_home}
-              src="../../public/icon.JPG"
+              src="public\undraw_developer-activity_dn7p.svg"
               alt="home image"
             />
           </figure>
