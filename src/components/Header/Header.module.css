@@ -23,6 +23,7 @@
 }
 .header a {
   text-decoration: none;
+  color: var(--white);
 }
 
 .header a:visited {
