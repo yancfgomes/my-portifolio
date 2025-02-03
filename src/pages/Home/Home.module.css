@@ -1,49 +1,139 @@
 /* css da page home */
 .home {
-    width: 100%;
-    min-height: 90vh;
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  width: 100%;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home img {
+  height: 500px;
+}
+
+.home p {
+  font-size: 3rem; /* 48px */
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.home span {
+  color: var(--red);
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  font-size: 1.125rem; /* 18px */
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn_red {
+  background-color: var(--red);
+  color: var(--white);
+}
+.btn_red:hover {
+  background-color: #4169e1;
+}
+
+/* === Responsividade === */
+
+/* Ajustes para tablets (médias telas) */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
   }
-  
-  .home img {
-    height: 500px;
-  }
-  
   .home p {
-    font-size: 3rem; /* 48px */
+    font-size: 5rem; /* 48px */
     font-weight: bold;
     margin-bottom: 2rem;
   }
-  
-  .home span {
-    color: var(--red);
+  .home img {
+    height: 500px;
   }
-  
-  .btn {
-    width: 250px;
-    height: 50px;
-    font-size: 1.125rem; /* 18px */
-    font-weight: bold;
-    border: 0;
-    border-radius: 8px;
-    cursor: pointer;
-  
+  .apresentation {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    transition: background-color 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
-  
-  .btn_red {
-    background-color: var(--red);
-    color: var(--white);
+}
+
+/* Ajustes para smartphones (telas pequenas) */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 1rem;
   }
-  .btn_red:hover {
-    background-color: #4169e1;
+
+  .home img {
+    height: auto;
+    max-width: 80%;
   }
-  
+  .apresentation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .home p {
+    font-size: 2rem; /* 32px */
+  }
+
+  .btn {
+    width: 200px;
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+/* Ajustes para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  .home img {
+    height: auto;
+    max-width: 80%;
+  }
+
+  .home p {
+    font-size: 1.75rem; /* 28px */
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    width: 180px;
+    height: 40px;
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+/* Ajustes para telas super pequenas (até 390px) */
+@media (max-width: 390px) {
+  .home img {
+    max-width: 70%;
+  }
+
+  .home p {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .btn {
+    width: 160px;
+    height: 35px;
+    font-size: 0.875rem;
+  }
+}
