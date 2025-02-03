@@ -64,12 +64,12 @@
   .home img {
     height: 500px;
   }
-  .apresentation {
+  /* .apresentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+  } */
 }
 
 /* Ajustes para smartphones (telas pequenas) */
@@ -83,13 +83,13 @@
     height: auto;
     max-width: 80%;
   }
-  .apresentation {
+  /* .apresentation {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-  }
+  } */
 
   .home p {
     font-size: 2rem; /* 32px */
