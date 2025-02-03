@@ -18,3 +18,53 @@
   font-size: 3rem;
   color: var(--red);
 }
+
+/* === Responsividade === */
+
+/* Ajustes para tablets e telas médias */
+@media (max-width: 1024px) {
+  .icons {
+    width: 80%;
+    flex-wrap: wrap; /* Quebra os ícones para evitar sobreposição */
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Ajustes para smartphones grandes */
+@media (max-width: 768px) {
+  .contact {
+    text-align: center;
+    padding-inline: 20px;
+  }
+}
+
+/* Ajustes para smartphones pequenos */
+@media (max-width: 480px) {
+
+  .icons {
+    flex-direction: column;
+    width: 100%;
+    padding-block: 1rem;
+    gap: 1rem;
+  }
+
+  .icon {
+    font-size: 1.75rem;
+    
+  }
+}
+
+/* Ajustes para telas muito pequenas (até 390px) */
+@media (max-width: 390px) {
+  .contact {
+    padding: 1rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+    
+  }
+}

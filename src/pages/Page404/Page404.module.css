@@ -1,3 +1,12 @@
+.page404 {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .txts {
   display: flex;
   flex-direction: column;
@@ -6,6 +15,7 @@
 }
 .title2 {
   padding-top: 3rem;
+  text-align: center;
 }
 .red_txt {
   font-size: 3.125rem;
@@ -17,4 +27,45 @@
 .big_txt {
   color: var(--red);
   font-weight: bold;
+}
+
+/* Tablets pequenos e celulares grandes */
+@media (max-width: 768px) {
+  .big_txt {
+    font-size: 12.5rem; /* 200px */
+  }
+
+  .red_txt {
+    font-size: 2rem;
+  }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+  .big_txt {
+    font-size: 6.25rem; /* 100px */
+  }
+
+  .red_txt {
+    font-size: 1.5rem;
+  }
+
+  .title2 {
+    padding-top: 1.5rem;
+  }
+}
+
+/* Telas muito pequenas (até 390px) */
+@media (max-width: 390px) {
+  .big_txt {
+    font-size: 5rem; /* 80px */
+  }
+
+  .red_txt {
+    font-size: 1.25rem;
+  }
+
+  .title2 {
+    padding-top: 1rem;
+  }
 }

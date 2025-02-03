@@ -11,6 +11,8 @@
   align-items: center;
   gap: 3rem;
   margin-bottom: 3rem;
+  max-width: 80%;
+  flex-wrap: wrap;
 }
 .bio span {
   color: var(--red);
@@ -30,6 +32,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 .icons {
   width: 100%;
@@ -37,7 +40,70 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap; /* Evita que os ícones fiquem apertados */
+  gap: 1rem;
+  max-width: 100%;
+  object-fit: contain;
 }
 img {
   height: 200px;
+}
+/* === Responsividade === */
+
+/* tablet */
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column;
+    padding-inline: 20px;
+    gap: 1rem;
+    padding-block: 40px;
+  }
+  .bio img {
+    max-width: 50%;
+  }
+}
+
+/* mobile m */
+@media (max-width: 480px) {
+  .icons {
+    gap: 0.5rem;
+  }
+  .icons img {
+    height: 40px;
+  }
+  .techs {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .bio img {
+    max-width: 100%;
+  }
+  .bio {
+    gap: 1rem;
+    margin-bottom: 0;
+  }
+  .bio span {
+    font-size: 1.5rem;
+  }
+  .bio strong {
+    font-size: 1.5rem;
+  }
+  .texts h2 {
+    font-size: 1.5rem;
+  }
+  .texts p {
+    font-size: 1rem;
+  }
+  .techs {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .icons {
+    font-size: 40px;
+  }
+  .icons img {
+    height: 30px;
+  }
 }
