@@ -17,19 +17,19 @@
 }
 .card p {
   color: #555;
-  word-wrap: break-word; 
+  word-wrap: break-word;
   overflow-wrap: break-word;
-    white-space: normal;
-    text-align: center;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* Limita a 4 linhas */
-    line-clamp: 4; /* Limita a 4 linhas */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-    max-height: 120px; /* Ajuste conforme necessário */
-    width: 100%;
+  white-space: normal;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limita a 4 linhas */
+  line-clamp: 4; /* Limita a 4 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  max-height: 120px; /* Ajuste conforme necessário */
+  width: 100%;
 }
 
 .card_footer {
