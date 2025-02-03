@@ -98,7 +98,7 @@
   .btn {
     width: 200px;
     height: 45px;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -117,7 +117,7 @@
   .btn {
     width: 180px;
     height: 40px;
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.7rem; /* 14px */
   }
 }
 
