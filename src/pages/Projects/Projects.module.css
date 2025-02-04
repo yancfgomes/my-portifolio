@@ -1,5 +1,11 @@
 .projects h2 {
     text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.projects {
+    margin-bottom: 1rem;
+    padding: 0 1rem; /* Adiciona um pequeno padding para telas menores */
 }
 
 .list {
@@ -11,6 +17,19 @@
     gap: 1.5rem;
     margin-block: 1rem;
 }
-.projects{
-    margin-bottom: 1rem;
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .list {
+        flex-direction: column; /* Itens empilhados em telas menores */
+        gap: 1rem;
+    }
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1024px) {
+    .list {
+        max-width: 1200px;
+        margin: 1rem auto; /* Centraliza o conteúdo */
+    }
 }
