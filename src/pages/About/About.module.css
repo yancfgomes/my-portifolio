@@ -65,8 +65,14 @@ img {
 
 /* mobile m */
 @media (max-width: 480px) {
+  img {
+    height: 150px;
+  }
   .icons {
     gap: 0.5rem;
+  }
+  .bio {
+    margin-bottom: -2rem;
   }
   .icons img {
     height: 40px;
@@ -77,8 +83,8 @@ img {
 }
 
 @media (max-width: 390px) {
-  .bio img {
-    max-width: 100%;
+  img {
+    height: 150px;
   }
   .bio {
     gap: 1rem;
