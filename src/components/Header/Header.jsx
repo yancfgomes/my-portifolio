@@ -1,19 +1,30 @@
+import { useState } from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
 
-function Header(){
+function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <header className={styles.header}>
             <Link to="/">
                 <span>Yan Fernandes</span>
             </Link>
-            <nav>
+            
+            <button 
+                className={`${styles.menuToggle} ${menuOpen ? styles.active : ''}`} 
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Toggle menu"
+            >
+                ☰
+            </button>
+            
+            <nav className={menuOpen ? styles.navOpen : ''}>
                 <ul>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/contact">Contact</Link>
-
+                    <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+                    <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+                    <li><Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
+                    <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
                 </ul>
             </nav>
         </header>
